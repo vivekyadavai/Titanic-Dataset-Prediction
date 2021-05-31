@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>TITANIC API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+ <img src = "https://www.wallpaperpimper.com/wallpapers/72yfik/twitter/titanic.jpg" , width = 1300 , height  = 400> 
+</head>
+
+<body background = "https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?size=626&ext=jpg">
+ <div class="login">
+	<h1>Pridict The Passenger Which Was Traviling In Titanic Ship ( Survived / Not Survived ) :- </h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    <input type="text" name="Pclass" placeholder="Enter_Pclass" required="required" />
+    <input type="text" name="Sex" placeholder="Enter_Sex" required="required" />
+		<input type="text" name="Age" placeholder="Enter_Age" required="required" />
+    <input type="text" name="SibSp" placeholder="Enter_Sibsp" required="required" />
+    <input type="text" name="Parch" placeholder="Enter_Parch" required="required" />
+		<input type="text" name="Fare" placeholder="Enter_Fare" required="required" />
+		<input type="text" name="Embarked" placeholder="Enter_Embarked" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict People Survived / Not Survived </button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
