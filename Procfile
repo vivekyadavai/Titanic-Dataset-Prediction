@@ -1,1 +1,1 @@
-web: gunicorn app:app
+web: gunicorn titanic_app:app
