@@ -1,4 +1,5 @@
 # Titanic-Dataset-Pridiction
+<img src = "https://www.wallpaperpimper.com/wallpapers/72yfik/twitter/titanic.jpg">
 
 # About Titanic Dataset
 The titanic and titanic2 data frames describe the survival status of individual passengers
