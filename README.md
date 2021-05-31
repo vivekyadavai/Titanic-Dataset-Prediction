@@ -9,7 +9,7 @@ a variety of researchers. One of the original sources is Eaton & Haas (1994) Tit
 Triumph and Tragedy, Patrick Stephens Ltd, which includes a passenger list created by
 many researchers and edited by Michael A. Findlay.
 
-# DATASET specs
+# DATASET SPECS
 1. NAME: titanic3
 2. TYPE: Census
 3. SIZE: 1309 Passengers, 14 Variables
